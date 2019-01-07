@@ -1,0 +1,16 @@
+authorityKeyIdentifier=keyid,issuer
+subjectKeyIdentifier=hash
+keyUsage = critical, digitalSignature, keyEncipherment
+basicConstraints = critical, CA:FALSE
+extendedKeyUsage = serverAuth, clientAuth
+certificatePolicies = 2.23.140.1.2.1
+crlDistributionPoints = URI:http://crl.companyca.com/CompanyRSADomainValidationSecureServerCA.crl
+authorityInfoAccess = caIssuers;URI:http://crt.companyca.com/CompanyRSADomainValidationSecureServerCA.crt, OCSP;URI:http://ocsp.companyca.com
+subjectAltName = @subject_alt_section
+
+[ subject_alt_section ]
+DNS.1 = domain.com
+DNS.2 = *.domain.com
+DNS.3 = www.home.domain.com
+DNS.4 = mail.home.domain.com
+DNS.5 = dns.home.domain.com

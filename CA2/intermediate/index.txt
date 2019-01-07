@@ -1,0 +1,1 @@
+V	200106214351Z		01	unknown	/C=DE/ST=Hessen/L=Frankfurt/O=Company CA Limited/CN=Company RSA Domain Validation Secure Server CA
